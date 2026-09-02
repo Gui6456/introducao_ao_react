@@ -18,7 +18,7 @@ function App() {
         <div>
           <h1>Aprendendo React</h1>
           <p>
-            Estoy a usar the vite
+            Estou usando o Vite
           </p>
         </div>
         <button
