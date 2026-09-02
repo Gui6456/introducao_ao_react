@@ -10,17 +10,20 @@ function App() {
   return (
     <>
       <section id="center">
+
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
+
         <div>
           <h1>Aprendendo React</h1>
           <p>
             Estou usando o Vite
           </p>
         </div>
+        
         <button
           type="button"
           className="counter"
@@ -28,6 +31,7 @@ function App() {
         >
           Count is {count}
         </button>
+
       </section>
 
       <div className="ticks"></div>
@@ -37,15 +41,19 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
+          
           <h2>Documentation</h2>
           <p>Your questions, answered</p>
+
           <ul>
+
             <li>
               <a href="https://vite.dev/" target="_blank">
                 <img className="logo" src={viteLogo} alt="" />
                 Explore Vite
               </a>
             </li>
+
             <li>
               <a href="https://react.dev/" target="_blank">
                 <img className="button-icon" src={reactLogo} alt="" />
@@ -54,12 +62,15 @@ function App() {
             </li>
           </ul>
         </div>
+
         <div id="social">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
           </svg>
+
           <h2>Connect with us</h2>
           <p>Join the Vite community</p>
+
           <ul>
             <li>
               <a href="https://github.com/vitejs/vite" target="_blank">
@@ -73,6 +84,7 @@ function App() {
                 GitHub
               </a>
             </li>
+
             <li>
               <a href="https://chat.vite.dev/" target="_blank">
                 <svg
@@ -85,6 +97,7 @@ function App() {
                 Discord
               </a>
             </li>
+            
             <li>
               <a href="https://x.com/vite_js" target="_blank">
                 <svg
@@ -97,6 +110,7 @@ function App() {
                 X.com
               </a>
             </li>
+
             <li>
               <a href="https://bsky.app/profile/vite.dev" target="_blank">
                 <svg
@@ -112,7 +126,7 @@ function App() {
           </ul>
         </div>
       </section>
-
+            
       <div className="ticks"></div>
       <section id="spacer"></section>
     </>
