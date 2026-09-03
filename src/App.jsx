@@ -20,7 +20,7 @@ import { useEffect, useState } from "react"  // Ao usar o useState em algum luga
     setCliques(cliques + 1) // setCliques é a função que altera o valor da variável cliques, e cliques += 1 é o valor que será alterado, ou seja, o valor atual de cliques + 1, a função atualiza a variável.
   }
   
-  let [nome, setNome] = useState("Carregando...")
+  let [nome, setNome] = useState("Segredo...")
   
   function carregar_nome(){
     setNome("Guilherme")     
