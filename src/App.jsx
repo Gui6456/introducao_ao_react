@@ -31,14 +31,14 @@ import { useEffect, useState } from "react"  // Ao usar o useState em algum luga
       <h1>Hello {2+2} World!!!!!!!</h1>
       <p>Estou aprendendo React xD</p>
       <p>Meu nome é {nome}</p>
-      <button onClick={() => setNome("Guilherme")}> Carregar nome </button>  
+      <button onClick={() => setNome("Guilherme")}> Carregar nome </button>  <br/><br/> 
       {/* Ou fazer assim, <button> onClick={carregar_nome} */}
       {/* Dessa forma eu preciso criar uma função para modificar uma variável(global ou local), acho que a () => é mais direta */} 
 
       <hr/>
 
       <p>Você clicou {cliques} vezes</p>
-      <button onClick={soma_cliques}> Clique Aqui</button> 
+      <button onClick={soma_cliques}> Clique Aqui</button>  <br/><br/>
       {/*
             Arrow Function -> Função do tipo seta (lambda) () =>
             Função anônima -> Função sem nome, que não precisa ser declarada antes de ser usada, e é usada apenas uma vez.

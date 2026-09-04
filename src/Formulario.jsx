@@ -1,4 +1,5 @@
 import {useState} from "react"
+import "./Formulario.css"  // É assim que se importa o CSS no React, sem precisar colocar o caminho completo, apenas o nome do arquivo.
 
 function Formulario () {
 
@@ -9,13 +10,13 @@ function Formulario () {
 
     function salvar(){
         
-        if (nome == "" || idade == "" || local == "" || estado == ""){
+        if (nome === "" || idade === "" || local === "" || estado === ""){  // === é usado como estritamente rigoroso, ou seja, não aceita nem mesmo um espaço em branco.
             alert("Preencha todos os campos")
             return
         } 
 
-        if (nome.length > 3 && idade > 18 && local.length > 2 && estado.length == 2){
-            alert("Seja bem-vindo(a) " + nome)
+        if (nome.length > 3 && parseInt(idade) > 18 && local.length > 2 && estado.length === 2){
+            alert("Seja bem-vindo(a) " + nome + ", você tem " + idade + " anos, mora em " + local + " e seu estado é " + estado)
         } else {
             alert("Dados inválidos")
         }
@@ -28,18 +29,19 @@ function Formulario () {
             
                 <p> Digite seu nome: </p>
                 {/* O onChange é ativado sempre que o usuário digitar algo no input, ou mudar algo nele. (e = evento) (e.target.value captura o evento e coloca no input o valor do alvo citado) */}
-                <input placeholder="Seu nome" onChange={ e => setNome(e.target.value)} />
+                <input name="nome" placeholder="Seu nome" onChange={ e => setNome(e.target.value)} />
 
                 <p> Digite sua idade: </p>
-                <input placeholder="Sua idade" onChange={ e => setIdade(e.target.value)} />
+                <input name="idade" placeholder="Sua idade" onChange={ e => setIdade(e.target.value)} />
 
                 <p> Digite onde mora: </p>
-                <input placeholder="Cidade" onChange={ e => setLocal(e.target.value)} /> 
-                <input placeholder="Estado" onChange={ e => setEstado(e.target.value)} /> 
+                <input name="local" placeholder="Cidade" onChange={ e => setLocal(e.target.value)} /> 
+                <input name="estado" maxLength="2" placeholder="Estado" onChange={ e => setEstado(e.target.value)} /> 
 
                 <br/><br/>
 
-                <button onClick = {salvar} > Salvar </button>
+                <button onClick = {salvar} > Salvar </button>  <br/><br/>
+                <hr/>
             </div>
         )
 }
