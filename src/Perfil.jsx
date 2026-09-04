@@ -28,7 +28,7 @@ function Perfil() {
                         <button>Alterar Senha</button>
                     </div>  
                 :   
-                    <></>  // Isso é uma tag vazia (fragmento), para quando não quer se colocar nada em alguma tag
+                    <></>  // Isso é uma tag vazia (fragmento), para quando não se quer colocar nada em alguma tag
             }
         </div>
     )
