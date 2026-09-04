@@ -6,8 +6,8 @@ import Perfil from './Perfil.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App /> 
-    <Formulario />
+    {/*<App /> 
+    <Formulario />*/}
     <Perfil />
   </StrictMode>,
 )
